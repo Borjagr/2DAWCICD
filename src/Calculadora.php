@@ -14,7 +14,18 @@ class Calculadora
         return $this->num1+$this->num2;
     }
 
-    public function resta(){
+    public function diff(){
+        if ($this->num1 > $this->num2)
+            return $this->num1-$this->num2;
+        else
+            return $this->num2-$this->num1;
+    }
+
+    public function mult(){
+        return $this->num1*$this->num2;
+    }
+
+    public function div(){
         if ($this->num1 > $this->num2)
             return $this->num1-$this->num2;
         else
